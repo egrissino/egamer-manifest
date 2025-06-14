@@ -18,7 +18,7 @@
   <project remote="oe" name="meta-openembedded" path="meta-openembedded" />
 
   <!-- GNOME/Wayland support (Weston, libwayland, libinput) -->
-  <project remote="oe" name="meta-gnome"             path="meta-gnome" />
+  <project remote="oe" name="meta-gnome" path="meta-openembedded/meta-gnome" />
 
   <!-- Egamer yocto build configuration -->
   <project remote="github"
