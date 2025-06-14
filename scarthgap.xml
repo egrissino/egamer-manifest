@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Define remotes -->
+  <remote name="yocto"  fetch="git://git.yoctoproject.org" />
+  <remote name="oe"     fetch="git://git.openembedded.org" />
+  <remote name="github" fetch="https://github.com" />
+
+  <!-- Use Scarthgap (April 2024 LTS) for all core Yocto layers -->
+  <default remote="yocto" revision="scarthgap" sync-j="4" />
+
+  <!-- Poky: BitBake + OE-Core -->
+  <project name="poky"                   path="poky" />
+
+  <!-- Intel BSP (kernel tuning, firmware, platform configs) -->
+  <project name="meta-intel"             path="meta-intel" />
+
+  <!-- OE-Extra layers (meta-oe, meta-networking, meta-python, etc.) -->
+  <project remote="oe" name="meta-openembedded" path="meta-openembedded" />
+
+  <!-- GNOME/Wayland support (Weston, libwayland, libinput) -->
+  <project name="meta-gnome"             path="meta-gnome" />
+
+  <!-- Egamer yocto build configuration -->
+  <project remote="github"
+            name="egrissino/meta-egamer"
+            path="meta-egamer"
+            revision="master" />
+
+  <!-- NVIDIA proprietary driver recipes -->
+  <project remote="github"
+           name="madisongh/meta-nvidia"
+           path="meta-nvidia"
+           revision="master" />
+</manifest>
