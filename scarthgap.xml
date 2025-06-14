@@ -18,17 +18,17 @@
   <project remote="oe" name="meta-openembedded" path="meta-openembedded" />
 
   <!-- GNOME/Wayland support (Weston, libwayland, libinput) -->
-  <project name="meta-gnome"             path="meta-gnome" />
+  <project remote="oe" name="meta-gnome"             path="meta-gnome" />
 
   <!-- Egamer yocto build configuration -->
   <project remote="github"
             name="egrissino/meta-egamer"
             path="meta-egamer"
-            revision="master" />
+            revision="scarthgap" />
 
   <!-- NVIDIA proprietary driver recipes -->
   <project remote="github"
-           name="madisongh/meta-nvidia"
+           name="madisongh/meta-tegra"
            path="meta-nvidia"
-           revision="master" />
+           revision="scarthgap" />
 </manifest>
