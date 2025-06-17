@@ -29,8 +29,9 @@
            path="meta-nvidia"
            revision="scarthgap" />
 
-  <!-- NVIDIA proprietary driver recipes -->
+  <!-- Debian -->
   <project remote="github"
-           name="meta-debain/meta-debain"
-           path="meta-debain" />
+           name="meta-debian/meta-debian"
+           path="meta-debian"
+           revision="warrior" />
 </manifest>
