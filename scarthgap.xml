@@ -28,4 +28,10 @@
            name="madisongh/meta-tegra"
            path="meta-nvidia"
            revision="scarthgap" />
+
+  <!-- NVIDIA proprietary driver recipes -->
+  <project remote="github"
+           name="meta-debain/meta-debain"
+           path="meta-debain"
+           revision="warrior" />
 </manifest>
